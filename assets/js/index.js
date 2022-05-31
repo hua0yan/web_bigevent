@@ -17,7 +17,7 @@ const renderAvater=(user)=>{
     let uname=user.nickname||user.username
     $('#welcome').html(`欢迎${uname}`)
     if(user.user_pic!==null){
-       $('.layui-nav-img').attr('src',user.user_pic)
+       $('.layui-nav-img').attr('src',user.user_pic).show()
        $('.text-avatar').hide() 
     }else{
         $('.text-avatar').html(uname[0].toUpperCase())
